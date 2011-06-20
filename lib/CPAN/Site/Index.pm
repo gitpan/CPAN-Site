@@ -7,7 +7,7 @@ use strict;
 
 package CPAN::Site::Index;
 use vars '$VERSION';
-$VERSION = '1.07';
+$VERSION = '1.08';
 
 use base 'Exporter';
 
@@ -231,10 +231,15 @@ sub collect_package_details($$)
             while m/package|use|VERSION/ && !m/\;/;
 
         if( m/^\s* package \s* ((?:\w+\:\:)*\w+) (?:\s+ (\S*))? \s* ;/x )
-        {   # second package in file?
-            my $thispkg     = $1;
-            my $thisversion = $2 ? qv($2) : undef;
+        {   my ($thispkg, $v) = ($1, $2);
+            my $thisversion;
+            if($v)
+            {   $thisversion = eval {qv($v)};
+                alert __x"illegal version for {pkg}, found '{version}': {err}"
+                   , pkg => $thispkg, version => $v, err => $@  if $@;
+            }
 
+            # second package in file?
             register $package, $VERSION, $dist
                 if defined $package;
 

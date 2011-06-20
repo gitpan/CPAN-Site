@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               CPAN-Site
-version:            1.07
+version:            1.08
 abstract:           adding site local modules
 author:
     - Mark Overmeer
