@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               CPAN-Site
-version:            1.08
+version:            1.09
 abstract:           adding site local modules
 author:
     - Mark Overmeer
@@ -12,6 +12,7 @@ build_requires:
     ExtUtils::MakeMaker:  0
 requires:
     Archive::Tar:     1
+    Archive::Zip:     0
     CPAN::Checksums:  0
     Getopt::Long:     0
     HTTP::Date:       0
