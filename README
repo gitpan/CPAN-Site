@@ -1,5 +1,5 @@
-=== README for CPAN-Site version 1.09
-=   Generated on Wed Aug  3 16:54:22 2011 by OODoc 2.00
+=== README for CPAN-Site version 1.10
+=   Generated on Sun Feb 12 22:26:39 2012 by OODoc 2.00
 
 There are various ways to install this module:
 
@@ -9,16 +9,16 @@ There are various ways to install this module:
  (2) if you use Windows, have a look at http://ppm.activestate.com/
 
  (3) if you have downloaded this module manually (as root/administrator)
-       gzip -d CPAN-Site-1.09.tar.gz
-       tar -xf CPAN-Site-1.09.tar
-       cd CPAN-Site-1.09
+       gzip -d CPAN-Site-1.10.tar.gz
+       tar -xf CPAN-Site-1.10.tar
+       cd CPAN-Site-1.10
        perl Makefile.PL
        make          # optional
        make test     # optional
        make install
 
 For usage, see the included manual-pages or
-    http://search.cpan.org/dist/CPAN-Site-1.09/
+    http://search.cpan.org/dist/CPAN-Site-1.10/
 
 Please report problems to
     http://rt.cpan.org/Dist/Display.html?Queue=CPAN-Site
