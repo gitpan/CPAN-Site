@@ -1,32 +1,32 @@
---- #YAML:1.0
-name:               CPAN-Site
-version:            1.10
-abstract:           adding site local modules
+---
+abstract: 'adding site local modules'
 author:
-    - Mark Overmeer
-license:            perl
-distribution_type:  module
-configure_requires:
-    ExtUtils::MakeMaker:  0
+  - 'Mark Overmeer'
 build_requires:
-    ExtUtils::MakeMaker:  0
-requires:
-    Archive::Tar:     1
-    Archive::Zip:     0
-    CPAN::Checksums:  0
-    Getopt::Long:     0
-    HTTP::Date:       0
-    IO::Zlib:         0
-    Log::Report:      0.25
-    LWP:              0
-    Test::More:       0.82
-    Test::Pod:        1
-    version:          0.76
-no_index:
-    directory:
-        - t
-        - inc
-generated_by:       ExtUtils::MakeMaker version 6.56
+  ExtUtils::MakeMaker: 0
+configure_requires:
+  ExtUtils::MakeMaker: 0
+dynamic_config: 1
+generated_by: 'ExtUtils::MakeMaker version 6.6302, CPAN::Meta::Converter version 2.120921'
+license: perl
 meta-spec:
-    url:      http://module-build.sourceforge.net/META-spec-v1.4.html
-    version:  1.4
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: CPAN-Site
+no_index:
+  directory:
+    - t
+    - inc
+requires:
+  Archive::Tar: 1
+  Archive::Zip: 0
+  CPAN::Checksums: 0
+  Getopt::Long: 0
+  HTTP::Date: 0
+  IO::Zlib: 0
+  LWP: 0
+  Log::Report: 0.25
+  Test::More: 0.82
+  Test::Pod: 1
+  version: 0.76
+version: 1.11

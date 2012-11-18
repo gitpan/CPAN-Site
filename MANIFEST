@@ -12,4 +12,5 @@ t/99pod.t
 t/test_data/Distro-With-Multi-Package-Module.tar.gz
 t/test_data/Distro-With-Packages-Outside-lib.tar.gz
 t/test_data/Text-PDF-0.29a.tar.gz
-META.yml                                 Module meta-data (added by MakeMaker)
+META.yml                                 Module YAML meta-data (added by MakeMaker)
+META.json                                Module JSON meta-data (added by MakeMaker)

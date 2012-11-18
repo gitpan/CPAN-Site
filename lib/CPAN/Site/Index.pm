@@ -1,4 +1,4 @@
-# Copyrights 1998,2005-2012 by Mark Overmeer.
+# Copyrights 1998,2005-2012 by [Mark Overmeer].
 #  For other contributors see ChangeLog.
 # See the manual pages for details on the licensing terms.
 # Pod stripped from pm file by OODoc 2.00.
@@ -7,7 +7,7 @@ use strict;
 
 package CPAN::Site::Index;
 use vars '$VERSION';
-$VERSION = '1.10';
+$VERSION = '1.11';
 
 use base 'Exporter';
 
@@ -184,7 +184,7 @@ sub inspect_archive
     return unless -f $fn
                && ($fn =~ $tar_gz || $fn =~ $zip);
 
-    (my $dist = $fn) =~ s!^$topdir[\\/]!!;
+    (my $dist = $fn) =~ s!^\Q$topdir\E[\\/]!!;
 
     if(defined $index_age && -M $fn > $index_age)
     {
